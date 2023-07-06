@@ -1,46 +1,19 @@
-import { Button, Typography, styled } from "@mui/material";
-import SettingsIcon from "@mui/icons-material/Settings";
-import AddIcon from "@mui/icons-material/Add";
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import Navbar from "./components/Navbar";
+import { Box, Stack } from "@mui/material";
 
 function App() {
-  const BlueButton = styled(Button)(({ theme }) => ({
-    backgroundColor: theme.palette.otherColor.main,
-    // backgroundColor: 'skyblue',
-    color: "#888",
-    margin: 5,
-    "&:hover": {
-      backgroundColor: "green",
-      color: "red",
-    },
-    "&:disabled": {
-      backgroundColor: "gray",
-      color: "white",
-    },
-  }));
-
   return (
-    <div>
-      <Button variant="text">Text</Button>
-      <Button
-        startIcon={<SettingsIcon />}
-        color="secondary"
-        variant="contained"
-        size="small"
-      >
-        Contained
-      </Button>
-      <Button startIcon={<AddIcon />} color="success" variant="contained">
-        Uspesno
-      </Button>
-      <Button variant="outlined" disabled>
-        Outlined
-      </Button>
-      <Typography variant="h1" component="p">
-        koristi h1 stil ali je p tag
-      </Typography>
-      <BlueButton>Prvo dugme</BlueButton>
-      <BlueButton>Drugo</BlueButton>
-    </div>
+    <Box>
+      <Navbar />
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
