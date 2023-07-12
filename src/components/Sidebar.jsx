@@ -7,7 +7,6 @@ import {
   ListItemText,
   Switch,
 } from "@mui/material";
-import React from "react";
 import {
   AccountBox,
   Article,
