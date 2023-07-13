@@ -61,7 +61,8 @@ function Add() {
         <Box
           width={400}
           height={290}
-          bgcolor="whitesmoke"
+          bgcolor={"background.default"}
+          color={"text.primary"}
           p={3}
           borderRadius={5}
         >
