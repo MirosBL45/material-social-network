@@ -33,7 +33,7 @@ function Post() {
       />
       <CardMedia
         component="img"
-        height="20%"
+        height="400px"
         image={avatarImage}
         alt="Paella dish"
       />
