@@ -2,49 +2,17 @@ import {
   AppBar,
   Avatar,
   Badge,
-  Box,
   InputBase,
   Menu,
   MenuItem,
-  Toolbar,
   Typography,
-  styled,
 } from "@mui/material";
 import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
 import MailIcon from "@mui/icons-material/Mail";
 import { Notifications } from "@mui/icons-material";
 import React, { useState } from "react";
 import avatarImage from "../assets/avatarImage.jpg";
-
-const StyledToolbar = styled(Toolbar)({
-  display: "flex",
-  justifyContent: "space-between",
-});
-
-const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "white",
-  padding: "0 10px",
-  borderRadius: theme.shape.borderRadius,
-  width: "40%",
-}));
-
-const Icons = styled(Box)(({ theme }) => ({
-  display: "none",
-  alignItems: "center",
-  gap: "15px",
-  [theme.breakpoints.up("sm")]: {
-    display: "flex",
-  },
-}));
-
-const UserBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  gap: "10px",
-  [theme.breakpoints.up("sm")]: {
-    display: "none",
-  },
-}));
+import { UserBox, Icons, Search, StyledToolbar } from "./StyledComponents";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -80,10 +48,8 @@ function Navbar() {
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
-        // anchorEl={anchorEl}
         open={open}
         onClose={() => setOpen(false)}
-        // onClose={handleClose}
         anchorOrigin={{
           vertical: "top",
           horizontal: "right",

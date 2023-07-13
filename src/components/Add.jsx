@@ -4,12 +4,10 @@ import {
   Button,
   ButtonGroup,
   Fab,
-  Modal,
   Stack,
   TextField,
   Tooltip,
   Typography,
-  styled,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import React, { useState } from "react";
@@ -20,19 +18,7 @@ import {
   PersonAdd,
   VideoCameraBack,
 } from "@mui/icons-material";
-
-const StyledModal = styled(Modal)({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-});
-
-const UserBox = styled(Box)({
-  display: "flex",
-  alignItems: "center",
-  gap: "10px",
-  marginBottom: "20px",
-});
+import { StyledModal, ModalUserBox } from "./StyledComponents";
 
 function Add() {
   const [open, setOpen] = useState(false);
@@ -69,7 +55,7 @@ function Add() {
           <Typography variant="h6" color="gray" textAlign="center">
             Create post
           </Typography>
-          <UserBox>
+          <ModalUserBox>
             <Avatar
               sx={{ width: 30, height: 30 }}
               alt="Remy Sharp"
@@ -78,7 +64,7 @@ function Add() {
             <Typography variant="span" fontWeight={500}>
               Mickey Dev
             </Typography>
-          </UserBox>
+          </ModalUserBox>
           <TextField
             sx={{ width: "100%" }}
             id="standard-multiline-static"
