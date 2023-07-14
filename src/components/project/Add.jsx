@@ -18,7 +18,8 @@ import {
   PersonAdd,
   VideoCameraBack,
 } from "@mui/icons-material";
-import { StyledModal, ModalUserBox } from "./StyledComponents";
+import { StyledModal, ModalUserBox } from "../data/StyledComponents";
+import avatarImage from '../../assets/avatarImage.jpg'
 
 function Add() {
   const [open, setOpen] = useState(false);
@@ -58,8 +59,8 @@ function Add() {
           <ModalUserBox>
             <Avatar
               sx={{ width: 30, height: 30 }}
-              alt="Remy Sharp"
-              src="/static/images/avatar/1.jpg"
+              alt="Mickey Dev"
+              src={avatarImage}
             />
             <Typography variant="span" fontWeight={500}>
               Mickey Dev

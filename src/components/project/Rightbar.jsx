@@ -12,9 +12,9 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { profiles } from "./images";
-import { posts } from "./images";
-import conversationData from "./conversationData";
+import { profiles } from "../data/images";
+import { posts } from "../data/images";
+import conversationData from "../data/conversationData";
 
 function Rightbar() {
   return (
@@ -46,9 +46,10 @@ function Rightbar() {
         <ImageList cols={2} gap={12}>
           {posts.map((image, index) => (
             <ImageListItem
+              key={index}
               sx={{ width: { md: "120px", lg: "170px", xl: "200px" } }}
             >
-              <img src={image} key={index} alt="latest photos" />
+              <img src={image} alt="latest photos" />
             </ImageListItem>
           ))}
         </ImageList>
@@ -59,7 +60,7 @@ function Rightbar() {
           sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
         >
           {profiles.slice(0, 3).map((image, index) => (
-            <>
+            <div key={index}>
               <ListItem alignItems="flex-start">
                 <ListItemAvatar>
                   <Avatar alt={conversationData[index].name} src={image} />
@@ -82,7 +83,7 @@ function Rightbar() {
                 />
               </ListItem>
               <Divider variant="inset" component="li" />
-            </>
+            </div>
           ))}
         </List>
       </Box>

@@ -3,7 +3,7 @@ import { posts } from "./images";
 const postsData = [
   {
     title: "Conquer the Sands with Thundering Motorcycles",
-    author: "Donald Dev",
+    author: "Ethan Anderson",
     date: "November 5, 2022",
     image: posts[2],
     description:
@@ -12,7 +12,7 @@ const postsData = [
   {
     title:
       "Victory at the Finish Line: Triumph and Elation in Racing's Culminating Moment",
-    author: "Mickey Dev3",
+    author: "Noah Mitchell",
     date: "September 15, 2022",
     image: posts[3],
     description:
@@ -20,7 +20,7 @@ const postsData = [
   },
   {
     title: "Race Day Excitement: The Collective Energy at the Starting Line",
-    author: "Minnie Dev4",
+    author: "Emma Thompson",
     date: "October 10, 2022",
     image: posts[4],
     description:
@@ -28,15 +28,15 @@ const postsData = [
   },
   {
     title: "Oceanic Competition: Thrilling Races Amidst the Roaring Waves",
-    author: "Donald Dev5",
+    author: "Olivia Parker",
     date: "November 5, 2022",
     image: posts[5],
     description:
       "Dive into the exhilarating world of oceanic swimming competitions, where athletes gather to test their mettle in the vast expanse of the sea. Experience the unique blend of serenity and intensity as swimmers brace themselves against the rolling waves, ready to unleash their skills and determination. Witness the synchronized chaos as participants line up, their eyes fixed on the distant buoys that mark the course. Marvel at the array of colorful swim caps and sleek swimsuits that adorn the athletes, reflecting their individuality within the collective pursuit of victory. Feel the salt-infused breeze and hear the distant sound of crashing waves, heightening the anticipation of the impending race. Sense the nervous energy radiating from each swimmer as they prepare to launch themselves into the water, their muscles primed for the grueling challenge ahead. Witness the synchronized dive as competitors plunge into the depths, their bodies slicing through the shimmering surface. Embrace the unity and friendly rivalry that permeates the atmosphere, as swimmers push each other to reach new heights of performance.",
   },
   {
-    title: "Post 2",
-    author: "A High-Stakes Battle of Speed and Endurance",
+    title: "A High-Stakes Battle of Speed and Endurance",
+    author: "Ava Johnson",
     date: "October 10, 2022",
     image: posts[1],
     description:
@@ -44,7 +44,7 @@ const postsData = [
   },
   {
     title: "The Beautiful Game Unleashed: A Thrilling Football Match Unfolds",
-    author: "Donald Dev5",
+    author: "Sophia Carter",
     date: "November 5, 2022",
     image: posts[6],
     description:
@@ -52,7 +52,7 @@ const postsData = [
   },
   {
     title: "Mastering the Art of Horseback Riding and Overcoming Obstacles",
-    author: "Mickey Dev",
+    author: "Mia Roberts",
     date: "September 15, 2022",
     image: posts[0],
     description:

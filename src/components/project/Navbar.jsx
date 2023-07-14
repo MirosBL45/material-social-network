@@ -11,8 +11,8 @@ import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
 import MailIcon from "@mui/icons-material/Mail";
 import { Notifications } from "@mui/icons-material";
 import React, { useState } from "react";
-import avatarImage from "../assets/avatarImage.jpg";
-import { UserBox, Icons, Search, StyledToolbar } from "./StyledComponents";
+import avatarImage from "../../assets/avatarImage.jpg";
+import { UserBox, Icons, Search, StyledToolbar } from "../data/StyledComponents";
 
 function Navbar() {
   const [open, setOpen] = useState(false);

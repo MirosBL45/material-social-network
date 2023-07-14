@@ -1,8 +1,19 @@
-import { Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from "@mui/material";
+import {
+  Avatar,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  CardMedia,
+  Checkbox,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
-import postsData from './postsData'
+import postsData from "../data/postsData";
+import { profiles } from "../data/images";
 
 function Post() {
   return (
@@ -10,7 +21,7 @@ function Post() {
       {postsData.map((post, index) => (
         <Card key={index} sx={{ margin: 5 }}>
           <CardHeader
-            avatar={<Avatar sx={{ bgcolor: "red" }} aria-label="recipe">R</Avatar>}
+            avatar={<Avatar src={profiles[index]} aria-label="recipe" />}
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
@@ -19,7 +30,15 @@ function Post() {
             title={post.title}
             subheader={post.date}
           />
-          <CardMedia component="img" height="400px" image={post.image} alt="Post Image" />
+          <Typography variant="caption" display="block" paddingLeft={2.5} paddingBottom={2.5}>
+            {post.author}
+          </Typography>
+          <CardMedia
+            component="img"
+            height="400px"
+            image={post.image}
+            alt="Post Image"
+          />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
               {post.description}
