@@ -27,7 +27,7 @@ function Add() {
     <div>
       <Tooltip
         onClick={() => setOpen(true)}
-        title="Add"
+        title="Add what is on your mind"
         sx={{
           position: "fixed",
           bottom: 20,
