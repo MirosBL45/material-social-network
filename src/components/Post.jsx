@@ -16,7 +16,7 @@ function Post() {
                 <MoreVertIcon />
               </IconButton>
             }
-            title={post.author}
+            title={post.title}
             subheader={post.date}
           />
           <CardMedia component="img" height="400px" image={post.image} alt="Post Image" />
